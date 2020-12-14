@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 
-let headingText = "Emoji Intepreter";
+let headingText = "Emoji Interpreter";
 
 var emojiDict = {
   "😀": "Happy Face",
