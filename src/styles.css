@@ -17,6 +17,7 @@ body {
 
 input {
   width: 60%;
+  height: 2rem;
 }
 
 span {
