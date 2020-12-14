@@ -5,7 +5,10 @@ let headingText = "Emoji Intepreter";
 
 var emojiDict = {
   "😀": "Happy Face",
-  "😗": "Kissing Face With Smiling Eyes"
+  "😗": "Kissing Face With Smiling Eyes",
+  "😋": "Face Savouring Delicious Food",
+  "🤔": "Thinking face",
+  "🤗": "Hugging Face"
 };
 
 export default function App() {
@@ -24,9 +27,9 @@ export default function App() {
   return (
     <div>
       <h1>{headingText}</h1>
-      <input onChange={inputChangeHadler} />
+      <input placeholder="Enter the emoji here" onChange={inputChangeHadler} />
 
-      <div> {meaning}</div>
+      <div className="discription"> {meaning}</div>
 
       <h3>emojies we know </h3>
       {Object.keys(emojiDict).map((item) => {
